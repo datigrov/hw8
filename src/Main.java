@@ -1,11 +1,11 @@
 public class Main {
         public static void main(String[] args) {
-            task1(2024);
+            task1(2000);
             task2(2010, 0);
             task3(100);
         }
         public static void task1(int leapYear) {
-            if ((leapYear % 4 == 0 && 100 != 0 || leapYear % 400 == 0) && leapYear > 1584) {
+            if ((leapYear % 4 == 0 && leapYear % 100 != 0 || leapYear % 400 == 0) && leapYear > 1584) {
                 System.out.println(leapYear + " год является високосным");
             } else {
                 System.out.println(leapYear + " год не является високосным");
