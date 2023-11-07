@@ -1,7 +1,7 @@
 public class Main {
         public static void main(String[] args) {
             task1(2000);
-            task2(2010, 0);
+            task2(2016, 1);
             task3(100);
         }
         public static void task1(int leapYear) {
@@ -22,10 +22,13 @@ public class Main {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
             }
             if (opSystem== clientAndroid&& phone) {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                System.out.println("Скачайте приложение для Android");
             } else if (opSystem == clientAndroid && clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            } else {
                 System.out.println("Операционная система не поддерживается");
             }
+
         }
 
         public static void task3(int deliveryDistance){
